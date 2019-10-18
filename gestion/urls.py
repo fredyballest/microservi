@@ -1,8 +1,9 @@
 from rest_framework import routers
-from .views import SedesViewSet
+from .api import SedesViewSet
 
 router = routers.DefaultRouter()
-router.register('api/sedes', SedesViewSet, 'sedes')
+router.register('api/sedes', SedesViewSet, 'leads')
 
 urlpatterns = router.urls
+
 
